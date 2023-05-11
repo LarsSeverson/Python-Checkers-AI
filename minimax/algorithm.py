@@ -35,7 +35,6 @@ def minimax(position, depth, max_player, game, draw_moves):
             max_eval = max(max_eval, evaluation)
             if max_eval == evaluation:
                 best_move = move
-        white += 1
         return max_eval, best_move
     else:
         min_eval = float('inf')
